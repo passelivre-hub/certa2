@@ -1,28 +1,28 @@
 Municipio;Regiao;Nome_Instituicao;Qt_Servicos;Qt_Recurso_TA;Qt_Open_Day
 Joinville;Norte;;0;0;0
-Florianópolis;Grande Florianópolis;;0;0;0
+Florianópolis;Grande Florianópolis;;1110;0;0
 Blumenau;Vale do Itajai;;0;0;0
 São José;Grande Florianópolis;;0;0;0
 Itajaí;Vale do Itajai;;0;0;0
 Chapecó;Oeste;;0;0;0
-Palhoça;Grande Florianópolis;;0;0;0
+Palhoça;Grande Florianópolis;;1110;0;0
 Criciúma;Sul;;0;0;0
 Jaraguá do Sul;Norte;;0;0;0
 Lages;Serra;;0;0;0
 Brusque;Vale do Itajai;;0;0;0
-Balneário Camboriú;Vale do Itajai;;0;0;0
+Balneário Camboriú;Vale do Itajai;;1110;0;0
 Camboriú;Vale do Itajai;;0;0;0
 Tubarão;Sul;;0;0;0
-Navegantes;Vale do Itajai;;0;0;0
-São Bento do Sul;Norte;;0;0;0
+Navegantes;Vale do Itajai;;0;1110;0
+São Bento do Sul;Norte;;0;0;1110
 Concórdia;Oeste;;0;0;0
 Itapema;Vale do Itajai;;0;0;0
-Biguaçu;Grande Florianópolis;;0;0;0
+Biguaçu;Grande Florianópolis;;0;0;0111
 Gaspar;Vale do Itajai;;0;0;0
-Indaial;Vale do Itajai;;0;0;0
-Rio do Sul;Vale do Itajai;;0;0;0
+Indaial;Vale do Itajai;;1110;0;0
+Rio do Sul;Vale do Itajai;;0111;0;0
 Araranguá;Sul;;0;0;0
-Caçador;Oeste;;0;0;0
+Caçador;Oeste;;0;1110;0
 Içara;Sul;;0;0;0
 Videira;Oeste;;0;0;0
 Tijucas;Grande Florianópolis;;0;0;0
