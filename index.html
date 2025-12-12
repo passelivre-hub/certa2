@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Estático CERTA - FCEE</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-logos">
+      <img src="govsc.svg" alt="Logo Governo de SC" class="logo-img" />
+      <img src="fcee.svg" alt="Logo FCEE" class="logo-img" />
+    </div>
+
+    <div class="hero-title">
+      <p class="hero-kicker">CERTA - FCEE</p>
+      <h1>Painel Estático</h1>
+      <p class="hero-sub">Centro de referência em Tecnologia Assistiva</p>
+    </div>
+
+    <div class="hero-actions">
+      <a class="button-link ghost" href="admin.html" aria-label="Painel Administrativo">
+        <span class="icon">⚙</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="top-grid">
+      <div class="card-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Número de Capacitações e Recursos por Tipo</h2>
+            <p class="muted">Somatório estadual a partir da planilha.</p>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="card-title">Serviços · Recursos de TA · Open Day</div>
+          <canvas id="tipoChart"></canvas>
+        </div>
+      </div>
+
+      <div class="card-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Capacitações e Recursos por Região</h2>
+            <p class="muted">Somatório (Serviços + TA + Open Day) por mesorregião.</p>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="card-title">Grande Florianópolis · Norte · Oeste · Vale do Itajai · Sul · Serra</div>
+          <canvas id="regiaoChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-panel">
+      <div class="panel-heading">
+        <div>
+          <h2>Mapa de Santa Catarina</h2>
+          <p class="muted">Vermelho: município com assessoria. Cinza: sem assessoria.</p>
+        </div>
+        <div id="map-tooltip" class="map-tooltip">Passe o mouse para ver o município<br/>e clique para abrir os detalhes.</div>
+      </div>
+
+      <div id="map"></div>
+      <div id="map-status" class="map-status"></div>
+    </section>
+  </main>
+
+  <script src="scripts/shared-data.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

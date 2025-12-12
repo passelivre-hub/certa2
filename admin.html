@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Administrativo - CERTA/FCEE</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body class="admin-page">
+  <header class="hero">
+    <div class="hero-logos">
+      <img src="govsc.svg" alt="Logo Governo de SC" class="logo-img" />
+      <img src="fcee.svg" alt="Logo FCEE" class="logo-img" />
+    </div>
+
+    <div class="hero-title">
+      <p class="hero-kicker">CERTA - FCEE</p>
+      <h1>Painel Administrativo</h1>
+      <p class="hero-sub">Editar e exportar a planilha do GitHub Pages</p>
+    </div>
+
+    <div class="hero-actions">
+      <a class="button-link" href="index.html">Voltar ao Painel</a>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <section class="card-panel">
+      <div class="panel-heading">
+        <div>
+          <h2>Instituições e Assessorias</h2>
+          <p class="muted">
+            Dica: após editar, clique em <strong>Baixar CSV</strong> e substitua o arquivo <code>data/instituicoes.csv</code> no seu repositório.
+          </p>
+        </div>
+        <div class="action-row">
+          <input id="import-file" type="file" accept=".csv" style="display:none" />
+          <button id="import-btn" class="secondary">Importar CSV</button>
+          <button id="add-row-btn">Adicionar linha</button>
+          <button id="download-btn">Baixar CSV</button>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="inst-table"></table>
+      </div>
+
+      <div style="margin-top:0.75rem;">
+        <span class="tag-danger">Atenção</span>
+        <span class="muted">Este admin não altera o GitHub automaticamente — ele só ajuda a editar e gerar o CSV.</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/shared-data.js"></script>
+  <script src="scripts/admin.js"></script>
+</body>
+</html>
